@@ -56,7 +56,11 @@ textarea{
 #btn1:hover{
     background: burlywood;
   }
-  
+
+#btn2:hover{
+    background: burlywood;
+  }
+    
 .error
 {
     color:red;
