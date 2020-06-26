@@ -21,7 +21,7 @@ const lbstate=document.getElementById("lbstate");
 
 const msg=document.getElementById("msg");
 
-// const userList=document.getElementById("userList");
+const userList=document.getElementById("userList");
 
 
 
@@ -35,7 +35,7 @@ $(document).ready(function(){  //call ready when whole HTML page is loaded
       if(status == true){
         const l= document.createElement("li");
         l.appendChild(document.createTextNode(
-            `${sname.value}: ${email.value}`));
+            `${sname.value}: ${fname.value}: ${email.value}`));
         
         //write 
         userList.appendChild(l); 
@@ -109,6 +109,8 @@ $(document).ready(function(){  //call ready when whole HTML page is loaded
               printTopMsg();
               lbgender.classList.add("Error");
               lbgender.innerHTML ="Invalid ";
+
+              setTimeout(()=> lbgender.remove(),5000);
               return false;
           }
 
@@ -117,6 +119,8 @@ $(document).ready(function(){  //call ready when whole HTML page is loaded
               printTopMsg();
               lbaddr.classList.add("Error");
               lbaddr.innerHTML ="Invalid ";
+
+              setTimeout(()=> lbaddr.remove(),5000);
               return false;
           }
 
