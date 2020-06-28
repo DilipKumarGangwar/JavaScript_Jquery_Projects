@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:green; /* For browsers that do not support gradients */
+    background-image:linear-gradient(skyblue , aqua , green ) ;
+}
+
+.countdowncontainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     height:500px;
+     width:1000px;
+     margin-left: 300px;
+    background-image:linear-gradien(green ,brown ) ;
+}
+
+.countdown{
+
+    height:100px;
+    width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px  ;
+    border: 2px solid blue;
+    background-image: linear-gradient(to right,orange,red,pink );
+    border-radius: 100px;
+    
+}
