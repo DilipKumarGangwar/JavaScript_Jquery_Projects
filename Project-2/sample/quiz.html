@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Quiz App</title>
+
+        <link rel="stylesheet" href="quiz.css">
+        
+    </head>
+
+    <body>
+        <div class="container">
+           <div class="question"></div>
+           
+           <label class="options"><input type="radio"  name="option" value="1"/> <span id ="opt1"></span> </label>  
+           <label class="options"><input type="radio"  name="option" value="2"/> <span id ="opt2"></span></label>    
+           <label class="options"><input type="radio"  name="option" value="3"/> <span id ="opt3"></span></label>    
+           <label class="options"><input type="radio"  name="option" value="4"/> <span id ="opt4"></span></label>    
+           <br>
+           
+           <button id="prevbtn" class="prev"  style="visibility: hidden;" onclick="loadPrev(event);">Previous</button> 
+           <button id="nextbtn" class="next" onclick="loadNext(event);">Next</button> 
+           
+        </div>
+
+        <div id="result" ></div>
+        
+        
+
+
+    </body>
+     <!-- javascripts -->
+     <script src="quiz_script.js">  </script>
+    
+
+
+</html>
