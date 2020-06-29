@@ -8,6 +8,15 @@
 
     <body>
         <div class="container">
+           <div class="nametimeheader">
+               <div class="user">
+                <h3>Hi , <span id="welcomename"></span></h3>
+               </div>
+               <div>
+                   <h3>Time Left: <span id="timeleft">00:00</span></h3>             
+              
+                </div>
+           </div>
            <div class="question"></div>
            
            <label class="options"><input type="radio"  name="option" value="1"/> <span id ="opt1"></span> </label>  
@@ -29,7 +38,8 @@
     </body>
      <!-- javascripts -->
      <script src="quiz_script.js">  </script>
-    
+
+     <script src="quiz_timer.js"></script>
 
 
 </html>

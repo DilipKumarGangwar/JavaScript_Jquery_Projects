@@ -23,16 +23,35 @@ body{
 
 .container{
      width:700px;
-     height:370px;
+     height:400px;
      transform: translateX(20%) translateY(30%);
      margin-left: 20%;
-     border: 1px solid;
-     background-color:lightsalmon;
+     border: 1px solid blueviolet;
+     background-image: linear-gradient(pink,yellow);
      
 
      
 
 }
+
+.nametimeheader{
+     
+    display: flex;
+    justify-content: space-between;
+    height:40px;
+    background-color: skyblue;
+    border:1px solid black;
+    padding: 10px;
+   
+}
+
+.user{
+    font-style: italic;
+    color: brown;
+    
+}
+
+
 
 .question{
      font-size: 20px;

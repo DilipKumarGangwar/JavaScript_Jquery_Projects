@@ -45,6 +45,8 @@ let questionIndex=0;
 let score =0;
 let totalQuestions = questionlist.length;
 
+let username = sessionStorage.getItem("username");
+document.querySelector("#welcomename").innerHTML = username;
 sessionStorage.setItem("TotalScore",score);          //initially set it to 0
 
 
