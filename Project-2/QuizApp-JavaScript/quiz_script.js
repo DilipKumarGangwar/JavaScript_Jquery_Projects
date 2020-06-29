@@ -28,6 +28,16 @@ let questionlist = [
         "option4" : "None of these",
         "answer"  : "2"
     
+    },
+
+    {
+        "question":"Which company owns Snapdragon Processor ?",
+        "option1" : "Media Tek",
+        "option2" : "Samsung",
+        "option3" : "Qualcomm",
+        "option4" : "None of these",
+        "answer"  : "3"
+    
     }
 ]
 
