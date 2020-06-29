@@ -5,11 +5,11 @@
     On submit, some of the basic entered detailsof each student are shown on the same page for reference.
     
 2. # Quiz App
-    a. The Quiz starts with homepage showing the Quiz instructions,asking the Candidate Name.The quiz starts and shows the Questions with 4 options. 
-    b. User can navigate between previous and next Questions
-    c. Time left Feature: It shows how much time is left ( as hour: min:sec) for Quiz to end (currently set to 120 sec = 2min inside quiz_timer.js. You can set it to your desired time).
-    d. Pop up Comes when timer expires.
-    e. After the Quiz ends, the user is shown total points he/she gained . Each question is of 10 marks.
+    The Quiz starts with homepage showing the Quiz instructions,asking the Candidate Name.The quiz starts and shows the Questions with 4 options. 
+    User can navigate between previous and next Questions
+    Time left Feature: It shows how much time is left ( as hour: min:sec) for Quiz to end (currently set to 120 sec = 2min inside quiz_timer.js. You can set it to your desired time).
+     Pop up Comes when timer expires.
+    After the Quiz ends, the user is shown total points he/she gained . Each question is of 10 marks.
    
 3. # Countdown 
     It shows the leftover time as days:hours:minutes:seconds from Jan 1 1970 to the specified end date (in javascript code)
