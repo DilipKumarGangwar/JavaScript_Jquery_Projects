@@ -1,0 +1,217 @@
+/* ------------ youtube.com/CodeExplained ------------ */
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, red,yellow,orange);
+    font-family:  sans-serif;
+
+}
+
+
+.topheader{
+     font-size: 25px;
+     background-color:blue;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+
+
+
+}
+
+
+.fa-check-circle{
+
+    color:green;
+
+}
+
+/* ------------ container ------------ */
+.container{
+    padding: 40px;
+    width:380px;
+    margin:0 auto;
+   
+}
+
+/* ------------ header ------------ */
+.header{
+    position: relative;
+    width: 380px;
+    height:200px;
+    background-image: url('../img/to_do_2.jpg');
+    background-size: 100% 200%;        /*  width height of image to set , other value can be auto */
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid brown;
+    
+}
+.clear{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+}
+.clear i{
+    font-size: 25px;   /* Set size of icon  */
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px orange;   /*h-shadow v shadow blur color    */
+    transform: rotate(45deg);   /*  Rotate a image/icon*/
+}
+
+.date{
+    position: absolute;
+    margin: 150px 100px 2px 5px;
+    
+    color: #FFF;
+    font-size: 25px;
+    font-family:  sans-serif;
+}
+
+
+/* ------------ content ------------ */
+.content{
+    height: 350px;
+    max-height:350px;
+    overflow: auto;
+    background-image:linear-gradient(skyblue, blue);
+   
+    padding: 10px;
+}
+
+.content ul{        /*this will hide the bullet point*/
+    padding:0;
+    margin:0;
+}
+
+
+
+
+/* ------------ add item ------------ */
+.add-items{
+    position: relative;
+    
+    height:40px;
+    padding:10px;
+}
+.add-items i{
+    position: absolute;
+    color:rgb(255, 0, 200);
+    font-size: 20px;
+    padding : 10px 0;
+    right: 10px;
+
+  
+   
+}
+
+.add-items input{
+    position: absolute;
+    margin-left: 10px;
+    padding-left: 0px;
+    height:40px;
+    width: 280px;
+    border-radius: 100px;
+    border: 2px solid black;
+    outline :none;
+    font-size:20px ;
+    
+}
+
+
+.add-items input::placeholder{
+     font-size: 20px;
+     color: blueviolet;
+     font-family: sans-serif;
+     padding: 40px;
+     
+    
+}
+
+
+/*........list.......... */
+
+
+
+.item{
+    
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+   
+    
+    padding: 0;
+    margin-top: 2px;
+    border : 2px double brown;
+}
+
+.item i.complete_incomplete{
+     position: absolute;
+     padding: 10px;
+     margin-left: 5px;
+     font-size: 22px;
+
+
+}
+
+.item i.complete_incomplete:hover{
+    position: absolute;
+    padding: 10px;
+    margin-left: 5px;
+    
+
+}
+
+.item p.text{
+     position: absolute;
+     padding-left: 5px;
+     margin-left: 40px;
+     margin-top:10px;
+     width:250px;
+     font-size: 25px;
+   
+
+
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
+
+.item i.delete_trash{
+
+    position: absolute;
+    right: 5px;
+    padding: 10px;
+    
+}
+
+.item i.delete_trash:hover{
+
+    color:red;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

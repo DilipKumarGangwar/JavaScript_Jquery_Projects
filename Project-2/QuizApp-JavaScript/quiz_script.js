@@ -56,6 +56,7 @@ let score =0;
 let totalQuestions = questionlist.length;
 
 let username = sessionStorage.getItem("username");
+let quizcompletiontime = sessionStorage.getItem("username");
 document.querySelector("#welcomename").innerHTML = username;
 sessionStorage.setItem("TotalScore",score);          //initially set it to 0
 
@@ -116,6 +117,7 @@ function loadNext(){
     questionIndex++;
     console.log("update=",questionIndex);
     if(questionIndex === totalQuestions-1  ){
+       
         nextbtn.textContent = "Finish";
 
     }
@@ -126,6 +128,7 @@ function loadNext(){
         // container.style.display="none";
         // result.style.display="";
         // result.textContent="Your score" + points;
+        //sessionStorage.setItem("QuizCompletionTime",`${hour} hr : ${min} min : ${sec}`);
         location.href="finalScore.html"
 
         return ;
@@ -152,7 +155,7 @@ function nextQuestion(questionIndex){
 
     //set the question
 
-    questionField.textContent = (questionIndex+1) + '.' + question_to_load;
+    questionField.textContent = "Q" + (questionIndex+1) + '. ' + question_to_load;
     opt1.textContent = question_to_load_ref.option1;
     opt2.textContent = question_to_load_ref.option2;
     opt3.textContent = question_to_load_ref.option3;
