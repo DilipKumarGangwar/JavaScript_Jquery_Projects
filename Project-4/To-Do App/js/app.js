@@ -27,8 +27,9 @@ clear.addEventListener("click",function(){
     
 /********************************************************* */
 
+const options={weekday:"long",year:"numeric",month:"short",day:"numeric"};
 
-date.innerHTML = new Date().toLocaleDateString();
+date.innerHTML = new Date().toLocaleDateString("en-US", options);
 
 
 /************************************************** */
