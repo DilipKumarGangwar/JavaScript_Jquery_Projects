@@ -56,7 +56,7 @@ let score =0;
 let totalQuestions = questionlist.length;
 
 let username = sessionStorage.getItem("username");
-let quizcompletiontime = sessionStorage.getItem("username");
+//let quizcompletiontime = sessionStorage.getItem("username");
 document.querySelector("#welcomename").innerHTML = username;
 sessionStorage.setItem("TotalScore",score);          //initially set it to 0
 
@@ -104,7 +104,7 @@ function loadNext(){
 
     //check base cases
     let answer = selectedOption.value ;   //it can 1,2,3,4
-    console.log("answer="+answer);
+   
     if(answer === questionlist[questionIndex].answer)  // if correct answer
     {
         score+=10;
@@ -123,12 +123,7 @@ function loadNext(){
     }
 
     if(questionIndex === totalQuestions  ){
-        // location.href="finalScore.html"; 
-        console.log("end");
-        // container.style.display="none";
-        // result.style.display="";
-        // result.textContent="Your score" + points;
-        //sessionStorage.setItem("QuizCompletionTime",`${hour} hr : ${min} min : ${sec}`);
+        sessionStorage.setItem("Time",`${min} min:${sec} sec`);
         location.href="finalScore.html"
 
         return ;
