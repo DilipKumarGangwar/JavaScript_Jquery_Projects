@@ -15,4 +15,5 @@
     It shows the leftover time as days:hours:minutes:seconds from Jan 1 1970 to the specified end date (in javascript code)
     
 4. # To Do APP  
-    You can add item by typing TODO and then either press enter or click plus (+) sign. The refresh button will delete/clear all TODOS The ToDOs can be marked completed , deleted     On opening app again, the app reloads all the previous (not deleted) ToDOs. The current Date is also shown on APP.
+    You can add item by typing TODO and then either press enter or click plus (+) sign. The refresh button will delete/clear all TODOS The ToDOs can be marked completed or     
+    deleted. On opening app again, the app reloads all the previous (not deleted) ToDOs. The current Date is also shown on APP.
